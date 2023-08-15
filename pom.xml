@@ -77,6 +77,13 @@
 			<version>1.17.3</version>
 			<scope>test</scope>
 		</dependency>
+<!--		 implementation 'io.lettuce:lettuce-core:6.2.0.RELEASE'-->
+
+		<dependency>
+			<groupId>io.lettuce</groupId>
+			<artifactId>lettuce-core</artifactId>
+			<version>6.2.0.RELEASE</version>
+		</dependency>
 
 	</dependencies>
 
