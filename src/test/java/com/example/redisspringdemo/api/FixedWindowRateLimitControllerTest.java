@@ -1,7 +1,6 @@
 package com.example.redisspringdemo.api;
 
 import com.example.redisspringdemo.utils.RateLimitResponseStats;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -32,7 +31,7 @@ class FixedWindowRateLimitControllerTest {
 
     private final RestTemplate restTemplate = new RestTemplate();
 
-    @Value("http://localhost:${local.server.port}/api/v1/ratelimit/fixedwindow")
+    @Value("http://localhost:8080/api/v1/ratelimit/fixedwindow")
     private String apiUrl;
 
     // 2 requests per minute per accountId rule
